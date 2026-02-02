@@ -1,0 +1,153 @@
+/* --black: #000000ff;
+--prussian-blue: #14213dff;
+--orange: #fca311ff;
+--alabaster-grey: #e5e5e5ff;
+--white: #ffffffff; */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+abbr {
+  text-decoration: none;
+  font-style: italic;
+}
+
+address{
+    display: inline-block;
+}
+
+.author{
+    color: #14213dff;
+    text-decoration: underline;
+
+}
+
+dt{
+    display: inline-block; 
+    min-width: 150px;
+}
+
+dd{
+    display: inline-block;
+}
+
+
+div#header {
+  background-color: #14213dff;
+  min-height: 250px;
+  line-height: 250px;
+  /* padding: 50px 0; */
+}
+
+.sistema-solare {
+  background-color: #fca311ff;
+  padding: 20px;
+  border: 3px solid #000000ff;
+}
+
+div#main {
+  padding: 20px 20px 0;
+  background-color: #e5e5e5ff;
+}
+
+.sistema-solare_title {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.sistema-solare_title--principale {
+  text-shadow: 2px 2px 2px #e5e5e5ff;
+  word-spacing: 3px;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fca311ff;
+}
+
+.sistema-solare__body {
+  font-size: 19px;
+  line-height: 1.15;
+}
+
+.sistema-solare__body li {
+  list-style-image: url("../../assets/img/icons8-pianeta-8.png");
+}
+
+
+
+.pianeta-container{
+    margin: 20px 0 0;
+    font-size: 0;
+
+}
+
+.pianeta-card{
+    width: calc(33.333333% - 20px);
+    border: 2px solid black;
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px 20px ; 
+
+}
+
+.pianeta-card h2{
+    text-align: center;
+    margin: 0;
+
+}
+
+.pianeta-card__head{
+    border-bottom: 2px black;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+.pianeta-card__body{
+    padding: 20px;
+
+}
+
+.pianeta-card__body p{
+    margin: 0;
+}
+
+.pianeta-card__footer{
+    color: #14213dff;
+    text-align: center;
+    border-top:  2px ridge black;
+    padding-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pianeta-card--boundary-left{
+    width: calc( 33.333333% - 10px);
+    margin-left: 0;
+}
+
+.pianeta-card--boundary-right{
+    width: calc( 33.333333% - 10px);
+    margin-right: 0;
+}
+
+
+div#footer{
+    background-color: #fca311ff;
+    padding: 30px;
+}
+
+

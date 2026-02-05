@@ -16,20 +16,102 @@
     <title>Il sistema solare</title>
 
     <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="src/css/sito.css">
   </head>
 
   <body>
-    <div id="header">
+    <header id="main-header">
       <h1 class="sistema-solare_title sistema-solare_title--principale">
         IL SISTEMA SOLARE
       </h1>
-    </div>
 
-    <div id="main">
-      <div class="sistema-solare">
-        <div class="sistema-solare__head">
+      <nav id="main-navbar">
+        <ul>
+          <li class="second-level-container">
+            <a href="#" tabindex="10">Pianeti</a>
+            <ul>
+              <li><a href="#" tabindex="11">Mercurio</a></li>
+              <li><a href="#" tabindex="12">Venere</a></li>
+              <li><a href="#" tabindex="13">Terra</a></li>
+              <li><a href="#" tabindex="14">Marte</a></li>
+              <li><a href="#" tabindex="15">Giove</a></li>
+              <li><a href="#" tabindex="16">Saturno</a></li>
+              <li><a href="#" tabindex="17">Urano</a></li>
+              <li><a href="#" tabindex="18">Nettuno</a></li>
+            </ul>
+          </li>
+          <li class="mega-dropdown-menu">
+            <a href="#" tabindex="20">Satelliti</a>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <header><h3>Terra</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Luna" target="_blank">Luna</a>
+                </div>
+                <div class="column">
+                  <header><h3>Marte</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Fobos_(astronomia)" target="_blank">Fobos</a>
+                  <a href="https://it.wikipedia.org/wiki/Deimos_(astronomia)" target="_blank">Deimos</a>
+                </div>
+                <div class="column">
+                  <header><h3>Giove</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Europa_(astronomia)" target="_blank">Europa</a>
+                  <a href="https://it.wikipedia.org/wiki/Ganimede_(astronomia)" target="_blank">Ganimede</a>
+                  <a href="https://it.wikipedia.org/wiki/Io_(astronomia)" target="_blank">Io</a>
+                  <a href="https://it.wikipedia.org/wiki/Callisto_(astronomia)" target="_blank">Callisto</a>
+                  <a href="https://it.wikipedia.org/wiki/Amaltea_(astronomia)" target="_blank">Amaltea</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <header><h3>Saturno</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Titano_(astronomia)" target="_blank">Titano</a>
+                  <a href="https://it.wikipedia.org/wiki/Encelado_(astronomia)" target="_blank">Encelado</a>
+                  <a href="https://it.wikipedia.org/wiki/Mimas_(astronomia)" target="_blank">Mimas</a>
+                  <a href="https://it.wikipedia.org/wiki/Dione_(astronomia)" target="_blank">Dione</a>
+                  <a href="https://it.wikipedia.org/wiki/Giapeto_(astronomia)" target="_blank">Giapeto</a>
+                </div>
+                <div class="column">
+                  <header><h3>Urano</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Setebos" target="_blank">Sebetos</a>
+                  <a href="https://it.wikipedia.org/wiki/Titania_(astronomia)" target="_blank">Titania</a>
+                  <a href="https://it.wikipedia.org/wiki/Umbriel" target="_blank">Umbriel</a>
+                  <a href="https://it.wikipedia.org/wiki/Miranda_(astronomia)" target="_blank">Miranda</a>
+                  <a href="https://it.wikipedia.org/wiki/Ariel_(astronomia)" target="_blank">Ariel</a>
+                </div>
+                <div class="column">
+                  <header><h3>Nettuno</h3></header>
+                  <a href="https://it.wikipedia.org/wiki/Tritone_(astronomia)" target="_blank">Tritone</a>
+                  <a href="https://it.wikipedia.org/wiki/Talassa_(astronomia)" target="_blank">Talassa</a>
+                  <a href="https://it.wikipedia.org/wiki/Ippocampo_(astronomia)" target="_blank">Ippocampo</a>
+                  <a href="https://it.wikipedia.org/wiki/Nereide_(astronomia)" target="_blank">Nereide</a>
+                  <a href="https://it.wikipedia.org/wiki/Galatea_(astronomia)" target="_blank">Galatea</a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              href="#"
+              tabindex="30"
+              accesskey="1"
+              title="Descrizione degli ideatori del sito.[Accesskey] + 1 per aprire la pagina"
+              >Chi Siamo</a
+            >
+          </li>
+          <li><a href="#" tabindex="40">Contattaci</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <main>
+      <section class="sistema-solare">
+        <header class="sistema-solare__head">
           <h2 class="sistema-solare_title">Informazioni sul sistema solare</h2>
-        </div>
+        </header>
 
         <div class="sistema-solare__body">
           <p>
@@ -79,14 +161,14 @@
             estende fino oltre alla metà del disco diffuso.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="pianeta-container">
-        <div class="pianeta-card pianeta-card--boundary-left">
-          <div class="pianeta-card__head">
+      <section class="pianeta-container">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
             <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -99,16 +181,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Venere</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -121,16 +205,19 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card pianeta-card--boundary-right">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <a href="src/html/terra.html" target="_blank">
+          <header class="pianeta-card__head">
+            <h2>Terra</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -143,16 +230,19 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
+        </a>
 
-        <div class="pianeta-card pianeta-card--boundary-left">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Marte</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -165,16 +255,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Giove</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -187,16 +279,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card pianeta-card--boundary-right">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Saturno</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -209,16 +303,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card pianeta-card--boundary-left">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Urano</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -231,16 +327,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-        <div class="pianeta-card">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
+        <article class="pianeta-card">
+          <header class="pianeta-card__head">
+            <h2>Nettuno</h2>
+          </header>
+          <section class="pianeta-card__body">
             <p>
               Mercurio è il primo pianeta del sistema solare in ordine di
               distanza dal Sole e il più interno del nostro sistema planetario.
@@ -253,35 +351,18 @@
               orbitale-rotazionale: completa tre rotazioni intorno al proprio
               asse ogni due orbite attorno al Sole.
             </p>
-          </div>
+          </section>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
-        <div class="pianeta-card pianeta-card--boundary-right">
-          <div class="pianeta-card__head">
-            <h2>Mercurio</h2>
-          </div>
-          <div class="pianeta-card__body">
-            <p>
-              Mercurio è il primo pianeta del sistema solare in ordine di
-              distanza dal Sole e il più interno del nostro sistema planetario.
-              È il più piccolo e la sua orbita è anche la più eccentrica, ovvero
-              la meno circolare, degli otto pianeti. Mercurio orbita in senso
-              diretto (in senso antiorario, come molti altri pianeti del sistema
-              solare) a una distanza media di 0,3871
-              <abbr title="unità astronomica">au</abbr> dal Sole con un periodo
-              siderale di 87,969 giorni terrestri. Mercurio è anche in risonanza
-              orbitale-rotazionale: completa tre rotazioni intorno al proprio
-              asse ogni due orbite attorno al Sole.
-            </p>
-          </div>
+          <footer class="pianeta-card__footer">
+            <span>Altre informazioni</span>
+          </footer>
+        </article>
 
-          <div class="pianeta-card__footer">Altre informazioni</div>
-        </div>
-      </div>
-    </div>
+        <div class="clearfix"></div>
+      </section>
+    </main>
 
-    <div id="footer">
+    <footer id="main-footer">
       <div id="footer-container">
         <dl>
           <div>
@@ -297,9 +378,9 @@
           </div>
         </dl>
         <small>
-            Tutti i contenuti sono protetti dalla licenza creative commons
+          Tutti i contenuti sono protetti dalla licenza creative commons
         </small>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

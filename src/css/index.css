@@ -4,81 +4,27 @@
 --alabaster-grey: #e5e5e5ff;
 --white: #ffffffff; */
 
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
-
-*{
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "EB Garamond", serif;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-abbr {
-  text-decoration: none;
-  font-style: italic;
-}
-
-address{
-    display: inline-block;
-}
-
-.author{
-    color: #14213dff;
-    text-decoration: underline;
-
-}
-
-dt{
-    display: inline-block; 
-    min-width: 150px;
-}
-
-dd{
-    display: inline-block;
-}
 
 
-div#header {
-  background-color: #14213dff;
-  min-height: 250px;
-  line-height: 250px;
-  /* padding: 50px 0; */
-}
+/* MAIN */
 
-.sistema-solare {
-  background-color: #fca311ff;
-  padding: 20px;
-  border: 3px solid #000000ff;
-}
 
-div#main {
-  padding: 20px 20px 0;
+main {
+  padding: 1.25rem 1.25rem 0;
   background-color: #e5e5e5ff;
 }
 
-.sistema-solare_title {
-  text-align: center;
-  margin: 0;
-  font-size: 40px;
-  text-transform: capitalize;
+section.sistema-solare {
+  background-color: #fca311ff;
+  padding: 1.25rem;
+  
+  border: 0.1875rem solid #000000ff;
 }
 
-.sistema-solare_title--principale {
-  text-shadow: 2px 2px 2px #e5e5e5ff;
-  word-spacing: 3px;
-  font-size: 60px;
-  text-transform: uppercase;
-  color: #fca311ff;
-}
 
 .sistema-solare__body {
-  font-size: 19px;
+  font-size: 1.1875rem;
+  /* font-size: 19px; */
   line-height: 1.15;
 }
 
@@ -86,68 +32,102 @@ div#main {
   list-style-image: url("../../assets/img/icons8-pianeta-8.png");
 }
 
+.pianeta-container {
+  margin: 1.25rem 0 0;
 
-
-.pianeta-container{
-    margin: 20px 0 0;
-    font-size: 0;
-
+  /* margin: 20px 0 0; */
 }
 
-.pianeta-card{
-    width: calc(33.333333% - 20px);
-    border: 2px solid black;
-    padding: 20px 0;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0 10px 20px ; 
-
+.pianeta-card {
+  width: calc(33.333333% - 0.8333333rem);
+  border: 0.125rem solid black;
+  /* padding: 1.25rem 0; */
+  /* padding: 20px 0; */
+  float: left;
+  margin: 0 0.625rem 1.25rem;
+  /* font-size: 16px; */
+  /* margin: 0 10px 20px; */
+  box-shadow: 0 0 0.3125rem 0.125rem #14213dff;
 }
 
-.pianeta-card h2{
-    text-align: center;
-    margin: 0;
-
+.pianeta-card header{
+  border-bottom: 1px solid #14213dff;
 }
 
-.pianeta-card__head{
-    border-bottom: 2px black;
-    padding-bottom: 20px;
-    margin:0;
+section.pianeta-container article.pianeta-card:nth-of-type(3n + 1) {
+  margin-left: 0;
 }
 
-.pianeta-card__body{
-    padding: 20px;
-
+section.pianeta-container article.pianeta-card:nth-of-type(3n) {
+  margin-right: 0;
 }
 
-.pianeta-card__body p{
-    margin: 0;
+/* PUNTO 3 !! */
+.pianeta-card:hover .pianeta-card__head {
+  background-color: #14213dff;
+  color: #fca311ff;
 }
 
-.pianeta-card__footer{
-    color: #14213dff;
-    text-align: center;
-    border-top:  2px ridge black;
-    padding-top: 20px;
-    font-size: 20px;
-    cursor: pointer;
+.pianeta-card:hover {
+  cursor: pointer;
 }
 
-.pianeta-card--boundary-left{
-    width: calc( 33.333333% - 10px);
-    margin-left: 0;
+.pianeta-card h2 {
+  text-align: center;
+  margin: 0;
 }
 
-.pianeta-card--boundary-right{
-    width: calc( 33.333333% - 10px);
-    margin-right: 0;
+.pianeta-card__head {
+  border-bottom: 0.125rem black;
+  padding: 1.25rem 0;
+  /* padding-bottom: 20px; */
+  margin: 0;
+}
+
+.pianeta-card__body {
+  padding: 1.25rem;
+  /* padding: 20px */
+}
+
+.pianeta-card__body p {
+  margin: 0;
+}
+
+.pianeta-card__footer {
+  color: #14213dff;
+  text-align: center;
+  border-top: 0.125rem ridge black;
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
+  /* padding-top: 20px;
+  font-size: 20px; */
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer.pianeta-card__footer span {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.3125rem;
+  display: block;
+}
+
+footer.pianeta-card__footer span:hover {
+  background-color: #14213dff;
+  color: #fca311ff;
+  cursor: pointer;
+  border-radius: 999rem;
+}
+
+footer#main-footer {
+  background-color: #fca311ff;
+  padding: 1.875rem;
 }
 
 
-div#footer{
-    background-color: #fca311ff;
-    padding: 30px;
-}
+
+
+
 
 
